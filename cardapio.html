@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>cardapio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cardápio</h1>
+        <p>Pratos do dia:</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="sobre nos.html">Sobre Nós</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+        </ul>
+    </nav>
+    <img class="demais_logos" src="img/logo2.png" alt="Logo" width="160" height="130">
+    
+    <div class="lista-pratos">
+        <section class="cardapio">
+            
+            <div class="prato">
+                <img src="img/prato1.png" alt="Prato 1" height="200" width="300">
+                <h2>Lasanha</h2>
+                <p id="pratos">• Para os facinados por massa, aqui está a melhor lasanha já vista. Temos a de carne, frango, presunto e queijo.. E aí? tentação não é?</p>
+                <!-- parte que trabalho com o js -->
+                <span class="preco">R$35,00</span>
+                <!--------------------------------->
+            </div>
+
+            <div class="prato">
+                <img src="img/prato2.png" alt="Prato 2" height="200" width="300">
+                <h2>Feijoada</h2>
+                <p id="pratos">• Repleta de ingredientes, acompanhada de um arroz soltinho e bem branquinho, uma farofinha de banana e um colve refogado como você nunca viu antes. Vamos provar?!</p>
+                <!-- parte que trabalho com o js -->
+                <span class="preco">R$40,00</span>
+                <!--------------------------------->         
+            </div>
+
+            <div class="prato">
+                <img src="img/prato3.png" alt="Prato 3" height="200" width="300">
+                <h2>Churrasco</h2>
+                <p id="pratos">• Apaixonado(a) por uma boa carne? Então, não perca tempo!!! Um pãozinho de alho, queijinho coalho, hummmm...</p>
+                <!-- parte que trabalho com o js -->
+                <span class="preco">R$45,90</span>
+                <!--------------------------------->
+            </div>
+        </section>
+
+        <section class="valores">
+            <div class="prato">
+                <h2>Quantidade Lasanhas:</h2>
+                <!-- parte que trabalho com o js -->
+                <label for="quantidade1"></label>
+                <br><input type="number" id="quantidade1">
+                <br><br><button class="calcularTotal" preco-prato="35">Calcular Total</button>
+                <br><br><span class="total"></span>
+                <!--------------------------------->
+            </div>
+
+            <div class="prato">
+                <h2>Quantidade Feijoada:</h2>
+                <!-- parte que trabalho com o js -->
+                <label for="quantidade2"></label>
+                <br><input type="number" id="quantidade2">
+                <br><br><button class="calcularTotal" preco-prato="40">Calcular Total</button>
+                <br><br><span class="total"></span>
+                <!--------------------------------->
+            </div>
+
+            <div class="prato">
+                <h2>Quantidade Churrasco:</h2>
+                <!-- parte que trabalho com o js -->
+                <label for="quantidade3"></label>
+                <br><input type="number" id="quantidade3">
+                <br><br><button class="calcularTotal" preco-prato="45.90">Calcular Total</button>
+                <br><br><span class="total"></span>
+                <!--------------------------------->
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 - Bem-vindo(a) ao Tira a Barriga da Miséria</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

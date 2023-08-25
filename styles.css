@@ -1,0 +1,247 @@
+body {
+    /*fonte da página definida*/
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    /*centralizar o texto*/
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #d2d3d3;
+}
+
+header {
+    background-color: #b57719;
+    color: #fff;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 1em 0;
+    /*coloquei uma pequena borda branca no meu bloco do topo da página*/
+    border: 3px solid #fff;
+    /*elemento que deixa o bloco com os cantos arredondados*/
+    border-radius: 10px;
+}
+
+#logo:hover {
+    opacity: 0.5;
+    animation-name: example;
+    animation-duration: 1s;
+    transition: 0.3s ease;
+}
+
+.demais_logos {
+    margin-top: 10px;
+}
+
+/*tudo referente ao menu de navegação da página inicial..*/
+#nav-princ ul li a {
+    /*criei esse menu navegador da página inicial separado, para conseguir manipular diferente dos outros*/
+    text-decoration: none;
+    color: #fff;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    /*o tipo da fonte que eu escolhi para o menu navegador*/
+    font-weight: bold;
+    /*deixa a fonte em negrito*/
+    border: 1px solid #fff;
+    padding: 10px;
+    margin: 5px;
+    background-color: #b57719;
+    border-radius: 5px;
+}
+
+#nav-princ ul {
+    list-style-type: none;
+    margin-top: 200px;
+}
+
+#nav-princ a:hover{
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #694321;
+}
+
+/*---------------------------------------------------------------*/
+
+/*tudo referente ao menu de navegação das outras paginas..*/
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    /*tira o sublinhado de baixo*/
+    text-decoration: none;
+    /*cor da fonte*/ 
+    color: #fff;
+    /*o tipo da fonte que eu escolhi para o menu navegador*/
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    /*deixa a fonte em negrito*/
+    font-weight: bold;
+    /*cria uma pequena borda em volta do botão de navegação*/
+    border: 1px solid #fff;
+    /*é responsável por definir uma distância interna entre um elemento e sua borda*/
+    padding: 10px;
+    /*adiciona uma margem ao seu elemento*/
+    margin: 5px;
+    /*define uma cor de plano de fundo para as caixinhas do nav*/
+    background-color: #b57719;
+    /*deixa as caixinhas com uma borda arredondada*/
+    border-radius: 5px;
+}
+
+/*hover: possibilita um elemento ter o seu estilo alterado através da ação do usuário, quando o próprio passa o cursor do mouse sobre o elemento*/
+nav a:hover{
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #694321;
+}
+
+/*---------------------------------------------------------------*/
+
+h1 {
+    margin-top: 30px;
+    /*abaixar um pouco o título */
+}
+
+p {
+    margin-top: 15px; /*abaixar um pouco o parágrafo*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#pratos {
+    font-size: 15px;
+    /*criei esse <p id="pratos"> para mudar o tamanho da fonte da descrição do prato*/
+}
+
+.lista-pratos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+/* Estilos para a seção do cardápio */
+.cardapio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.prato {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 1em;
+    padding: 1em;
+    width: 300px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.prato:hover {
+    /*criei esse hover somente para estilizar a div pratos, no caso o bloco que mostra os pratos..  quando passa o cursor por cima o bloco ativa uma opacidade.*/
+    opacity: 0.90;
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+.prato h2 {
+    /*titulo/nome dos pratos*/
+    margin-top: 0;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+.preco {
+    background-color: #f39c12;
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 15px;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+/* Estilizando a caixa de pergunta de quantidade */
+input[type="number"] {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 80px;
+    margin-top: -5px;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-size: 15px;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #f39c12;
+    box-shadow: 0px 0px 5px rgba(243, 156, 18, 0.7);
+}
+
+/* Estilizando o botão "Calcular Total" */
+.calcularTotal {
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-size: 20px;
+}
+
+.calcularTotal:hover {
+    background-color: #e67e22;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+.total {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+.valores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #b57719;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    /*isso é particularmente útil quando você deseja fixar um elemento na parte inferior de um contêiner*/
+    bottom: 0;
+    /*largura do meu rodapé*/
+    height: 2.5rem;
+    /*significa que a altura do elemento será de 2.5 vezes o tamanho da fonte padrão do elemento raiz. e está fixando a altura desse elemento*/
+}
+
+@media screen and (max-width:768px) {
+    #footer-content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width:426px) {
+    #footer-content{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    } 
+}
